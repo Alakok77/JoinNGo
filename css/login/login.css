@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    padding: 50px;
+    background-color: white;
+
+    .logo-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+
+        .text{
+            border: 1px black;
+        }
+
+        .name{
+            font-size: 40px;
+            font-weight: bold;
+            color: #03A791;
+        }
+
+        .minname{
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+    }
+
+    .txt-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 5px;
+
+        .msg1{
+            font-size: 16px;
+            font-weight: normal;
+            color: #9C9C9C;
+        }
+
+        .msg2{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .msg3-box{
+            display: flex;
+            gap: 10px;
+
+            .m1{
+                font-size: 16px;
+                color: #9C9C9C;
+                font-weight: normal;
+            }
+
+            .to-login{
+                font-size: 16px;
+                color: #03A791;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .form-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 15px;
+
+        label{
+            color: #979292;
+            font-size: 14px;
+        }
+
+        input{
+            background-color: transparent;
+            border-color: transparent;
+            outline: none;
+            color: #03A791;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .name{
+            display: flex;
+            width: 100%;
+            gap: 5%;
+            
+            
+            .firstname{
+                background-color: #81E7AF40;
+                height: 70px;
+                border-radius: 15px;
+                padding: 10px;
+                width: 100%;
+
+                .fname{
+                    width: 100%;
+                }
+            }
+
+            .lastname{
+                background-color: #81E7AF40;
+                height: 70px;
+                border-radius: 15px;
+                padding: 10px;
+                width: 100%;
+
+                .lname{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .email-wrap{
+            background-color: #81E7AF40;
+            height: 70px;
+            border-radius: 15px;
+            padding: 10px;
+
+            .email{
+                display: flex;
+                width: 100%;
+            }
+
+        }
+
+        .pass-wrap{
+            background-color: #81E7AF40;
+            height: 70px;
+            border-radius: 15px;
+            padding: 10px;
+
+            .password{
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+
+    .btn-wrapper{
+        display: flex;
+        gap: 5%;
+        width: 70%;
+        justify-content: end;
+        margin-top: -30px;
+
+        .change{
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            border-color: white;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #B3B3B3;
+            color: white;
+        }
+
+        .create{
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            border-color: white;
+            background-color: #03A791;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+.right-wrapper{
+    flex: 1;
+
+    img{
+        border-radius: 50px 0 0 50px;
+    }
+}
+
