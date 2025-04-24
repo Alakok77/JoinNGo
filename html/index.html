@@ -9,6 +9,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+    <script src="../script/register.js"></script>
+
 </head>
 <body>
     <div class="main">
@@ -24,16 +26,16 @@
             </div>
 
             <div class="txt-wrapper">
-                <h3 class="msg1">START FOR FREE</h3>
-                <h3 class="msg2">Start Your Journey</h3>
-                <div class="msg3-box">
-                    <h3 class="m1">Already a member?</h3>
-                    <h3 class="to-login">Log in</h3>
+                <h3 class="msg1" id="form-subtitle">START FOR FREE</h3>
+                <h3 class="msg2" id="form-title">Start Your Journey</h3>
+                <div class="msg3-box" id="toggle-msg-box">
+                    <h3 class="m1" id="toggle-msg">Already a member?</h3>
+                    <h3 class="to-login" id="toggle-action" onclick="switchToLogin()">Log in</h3>
                 </div>
             </div>
 
             <div class="form-wrapper">
-                <div class="name">
+                <div class="name" id="name-fields">
                     <div class="firstname">
                         <form>
                             <label for="fname">First Name</label><br>
@@ -47,6 +49,7 @@
                         </form>
                     </div>
                 </div>
+                
                 <div class="email-wrap">
                     <form>
                         <label for="email">Email</label><br>

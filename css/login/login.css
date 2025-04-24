@@ -83,6 +83,9 @@
                 font-size: 16px;
                 color: #03A791;
                 font-weight: normal;
+                cursor: pointer;
+                text-decoration: underline;
+                
             }
         }
     }
@@ -138,6 +141,16 @@
             }
 
         }
+
+        #name-fields {
+            display: flex;
+            gap: 5%;
+        }
+        
+        #name-fields.hidden {
+            display: none !important;
+        }
+        
 
         .email-wrap{
             background-color: #81E7AF40;
