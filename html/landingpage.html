@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/landingpage.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="../script/myTrip.js"></script>
 </head>
 <body>
 
@@ -149,5 +151,15 @@
         </div>
     </div>
 
+    <div class="tabs">
+        <button class="tab active" onclick="changeTab('upcoming', event)">Upcoming Trips</button>
+        <button class="tab" onclick="changeTab('completed', event)">Completed Trips</button>
+        <button class="tab" onclick="changeTab('hosted', event)">Hosted Trips</button>
+    </div>
+
+    <div class="trip-container" id="tripContainer">
+        
+    </div>
+    
 </body>
 </html>
