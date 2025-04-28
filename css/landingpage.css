@@ -478,4 +478,100 @@
         }
     }
     
-  }
+}
+
+.footer{
+    margin-top: 160px;
+    background-color: #81E7AF80;
+    border-radius: 35px 35px 0 0;
+    padding-top: 115px;
+    height: 525px;
+
+    .outer{
+        background: linear-gradient(to top right, #03A791, #014138);
+        border-radius: 35px 35px 0 0;
+        position: relative;
+        height: 410px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .wrapper{
+            display: flex;
+            background-color: white;
+            border-radius: 35px;
+            width: 1160px;
+            height: 150px;
+            position: absolute;
+            left: 132px;
+            top: -75px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            align-items: center;
+            justify-content: space-around;
+
+            .box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+
+                P{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .detail{
+            display: flex;
+            width: 100%;
+            margin-top: 80px;
+            justify-content: space-around;
+
+            .para{
+                text-indent: 2em;
+            }
+
+            .box-1, .box-2, .box-3{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h3{
+                    color: white;
+                    font-weight: normal;
+                    font-size: 20px;
+                    margin-left: -20px;
+                }
+
+                p{
+                    color: white;
+                    font-size: 16px;
+                }
+
+                span{
+                    font-weight: bold;
+                }
+                
+            }
+        }
+
+        .copy{
+            width: 100%;
+            margin-right: 80px;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            display: flex;
+            justify-content: end;
+            opacity: 25%;
+            color: white;
+        }
+    }
+
+    
+}
