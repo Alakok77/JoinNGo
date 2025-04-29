@@ -9,9 +9,16 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
     <script src="../script/createTrip.js" defer></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgTeDeE38-ljM76GLKlEx2-Ekn-QobQM8&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgTeDeE38-ljM76GLKlEx2-Ekn-QobQM8&callback=initMap&libraries=places" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js" defer></script>
+
 
 </head>
 <body>
@@ -47,10 +54,93 @@
     <div class="dest">
         <form>
             <label for="destination">Destination <span>เลือกจุดหมายปลายทาง</span></label><br>
-            <input type="text" class="destination" name="destination" placeholder="ชื่อสถานที่...">
+            <input id="searchBox" type="text" class="destination" name="destination" placeholder="ชื่อสถานที่...">
         </form>
         <div class="map" id="map" style="width: 100%; height: 500px;"></div>
 
+    </div>
+
+    <div class="time">
+        <p>Trip Date <span>เลือกเวลาการเดินทาง</span></p>
+
+        <div class="outter">
+            <p>วันเริ่มต้น</p>
+            <div class="wrapper">
+                <div class="inner">
+                    <img src="../image/icon/calendar.png" alt="">
+                    <div>
+                        <p>เลือกวัน</p>
+                        <input type="text" id="datePicker">
+                    </div>
+                </div>
+                <div class="inner">
+                    <img src="../image/icon/clock (1).png" alt="">
+                    <div>
+                        <p>เลือกเวลา</p>
+                        <input type="text" id="timePicker">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="outter">
+            <p>วันสิ้นสุด</p>
+            <div class="wrapper">
+                <div class="inner">
+                    <img src="../image/icon/calendar.png" alt="">
+                    <div>
+                        <p>เลือกวัน</p>
+                        <input type="text" id="datePicker">
+                    </div>
+                </div>
+                <div class="inner">
+                    <img src="../image/icon/clock (1).png" alt="">
+                    <div>
+                        <p>เลือกเวลา</p>
+                        <input type="text" id="timePicker">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="txt-editor">
+        <p>Trip Description <span>คำอธิบาย</span></p>
+        <textarea id="editor" class="editor"></textarea>
+        <div class="btn">
+            <button class="cancle">ยกเลิก</button>
+            <button>บันทึก</button>
+        </div>
+    </div>
+
+    <div class="checklist-box">
+        <p>Checklist <span>ของใช้จำเป็น</span></p>
+        <ul class="checklist">
+            <li><input type="checkbox" id="item1"> <label for="item1">First Task</label></li>
+            <li><input type="checkbox" id="item2"> <label for="item2">Second Task</label></li>
+            <li><input type="checkbox" id="item3"> <label for="item3">Third Task</label></li>
+            <li><input type="checkbox" id="item4"> <label for="item4">Fourth Task</label></li>
+        </ul>
+        <div class="btn">
+            <button class="cancle">แก้ไข</button>
+            <button>บันทึก</button>
+        </div>
+    </div>
+
+    <div class="code">
+        <form>
+            <label for="invite-code">Invite code <span>รหัสเชิญเพื่อน</span></label><br>
+            <input type="text" class="invite-code" name="invite-code" placeholder="สุ่มรหัสของคุณ...">
+        </form>
+        <div class="btn">
+            <button class="cancle">คัดลอก</button>
+            <button>สร้างรหัสใหม่</button>
+        </div>
+    </div>
+
+    <div class="save">
+        <button class="cancle">ยกเลิก</button>
+        <button class="save-btn">บันทึกทั้งหมด</button>
     </div>
 </body>
 </html>
