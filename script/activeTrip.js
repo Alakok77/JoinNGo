@@ -31,3 +31,46 @@ window.onload = () => {
     `
   }
 }
+
+
+function sendMessage() {
+  const input = document.getElementById('messageInput');
+  const text = input.value.trim();
+  if (!text) return;
+
+  const bubble = document.createElement('div');
+  bubble.classList.add('bubble');
+  bubble.textContent = text;
+
+  const fontSize = Math.floor(Math.random() * 10) + 14;
+  bubble.style.fontSize = fontSize + 'px';
+
+  const direction = Math.random() > 0.5 ? 'ltr' : 'rtl';
+  const duration = Math.floor(Math.random() * 20) + 20;
+
+  const top = Math.floor(Math.random() * 80) + 10;
+  bubble.style.top = top + 'vh';
+
+  const startLeft = direction === 'ltr' ? '-100%' : '100%';
+  const endLeft = direction === 'ltr' ? '100%' : '-100%';
+
+  bubble.style.left = startLeft;
+
+  bubble.style.animation = `move-${direction} ${duration}s linear forwards`;
+
+  document.getElementById('chatArea').appendChild(bubble);
+
+  input.value = '';
+}
+
+const style = document.createElement('style');
+style.textContent = `
+@keyframes move-ltr {
+  from { left: -100%; }
+  to { left: 100%; }
+}
+@keyframes move-rtl {
+  from { left: 100%; }
+  to { left: -100%; }
+}`;
+document.head.appendChild(style);

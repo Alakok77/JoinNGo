@@ -305,3 +305,107 @@
         }
     }
 }
+
+.invite{
+    justify-self: center;
+    width: 70%;
+    margin-top: 20px;
+
+    p{
+        font-size: 20px;
+        font-weight: bold;
+        color: #03A791;
+    }
+
+    span{
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .wrapper{
+        margin-left: 20px;
+        width: 460px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: #81E7AF33;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        input{
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0);
+            outline: none;
+            border: none;
+        }
+
+        button{
+            width: 120px;
+            height: 25px;
+            background-color: white;
+            border-radius: 5px;
+        }
+    }
+
+
+}
+
+.chat-area {
+    position: relative;
+    height: 400px;
+    width: 70%;
+    overflow: hidden;
+    background-color: white;
+    justify-self: center;
+    border-radius: 35px;
+    border: 2px solid #03A791;
+    margin-top: 20px;
+}
+
+.input-area {
+    width: 560px;
+    height: 50px;
+    justify-self: center;
+    margin-top: 10px;
+    background-color: #81E7AF33;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 15px;
+
+    input {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0);
+        outline: none;
+        border: none;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+.bubble {
+    position: absolute;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: black;
+    animation-timing-function: linear;
+}
+
+.footer{
+    height: 100px;
+}
