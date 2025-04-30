@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/activeTrip.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="../script/activeTrip.js" defer></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgTeDeE38-ljM76GLKlEx2-Ekn-QobQM8&callback=initMap" async defer></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            
+            <div class="logo">
+                <img src="../image/icon/traveler.png" alt="">
+                <div class="text">
+                    <p class="h">JoinNGo</p>
+                    <p class="mh">ไปเที่ยวกันมั้ย</p>
+                </div>
+            </div>
+
+            <div class="tap">
+                <div class="home"><p>Home</p></div>
+                <div class="cNj"><p>Create/Join</p></div>
+                <div class="trip"><p>Trips</p></div>
+                <div class="contact"><p>Contact</p></div>
+            </div>
+
+            <div class="profile">
+                <img src="../image/icon/user.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="banner">
+        <img class="banner-img" src="../image/img/image 1.png" alt="">
+        <div class="wrapper">
+            <img src="../image/icon/user.png" alt="">
+            <p>Trip Host : Mister Popo</p>
+            <h1>Forest Gump Trip</h1>
+            <div class="inner">
+                <p>Make your way to :</p>
+                <div class="title">
+                    <h2>Missisipi, America</h2>
+                </div>
+                <div class="map" id="map" style="width: 840px; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="time">
+        <div class="box">
+            <img src="../image/icon/flag.png" alt="">
+            <div>
+                <p>เริ่มต้น</p>
+                <h6>27-08-2088 12:00</h6>
+            </div>
+        </div>
+        <h1>To</h1>
+        <div class="box">
+            <img src="../image/icon/end.png" alt="">
+            <div>
+                <p>สิ้นสุด</p>
+                <h6>27-08-2088 12:00</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="desc">
+        <textarea name="" id="" readonly>
+            Discover the riches of our editor ✨
+Read on to better understand the functionalities you can test with this demo.
+💡 Did you know that…
+CKEditor is customizable. You can fine-tune the set of enabled plugins, available toolbar buttons, and the behavior of features.
+The editor supports @mentions. Start typing @An to see available suggestions.
+You can also insert dynamic placeholders within the content using merge fields! Start typing  or use the  button to insert them. Use the  button to preview values. {{mergeFieldExample}}
+You can paste content from Word or Google Docs, retaining the original document structure and formatting.
+Thanks to Import from Word , you can convert a DOCX document into HTML and edit it in CKEditor 5.
+You can export your document to PDF  or Word  with a single click.
+This demo showcases CKBox  to manage images and other files. You can enable your own upload adapter instead.
+        </textarea>
+    </div>
+
+    <div class="checklist-box">
+        <p>Checklist <span>ของใช้จำเป็น</span></p>
+        <ul class="checklist">
+            <li><input type="checkbox" id="item1"> <label for="item1">First Task</label></li>
+            <li><input type="checkbox" id="item2"> <label for="item2">Second Task</label></li>
+            <li><input type="checkbox" id="item3"> <label for="item3">Third Task</label></li>
+            <li><input type="checkbox" id="item4"> <label for="item4">Fourth Task</label></li>
+        </ul>
+    </div>
+
+    <div class="member">
+        <p>Member <span>เพื่อนร่วมเดินทาง</span></p>
+        <div class="wrapper" id="wrapper">
+            
+        </div>
+    </div>
+
+</body>
+</html>
