@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <script src="../script/myTrip.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+            
+            <div class="logo">
+                <img src="../image/icon/traveler.png" alt="">
+                <div class="text">
+                    <p class="h">JoinNGo</p>
+                    <p class="mh">ไปเที่ยวกันมั้ย</p>
+                </div>
+            </div>
+
+            <div class="tap">
+                <div class="home"><p>Home</p></div>
+                <div class="cNj"><p>Create/Join</p></div>
+                <div class="trip"><p>Trips</p></div>
+                <div class="contact"><p>Contact</p></div>
+            </div>
+
+            <div class="profile">
+                <img src="../image/icon/user.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="profile-edit">
+        <img src="../image/icon/user.png" alt="">
+        <button>เปลี่ยนรูป</button>
+    </div>
+
+    <div class="edit">
+        <div class="name">
+            <div class="box">
+                <p>ชื่อ</p>
+                <input type="text">
+            </div>
+            <div class="box">
+                <p>นามสกุล</p>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="btn">
+            <button class="cancle">ยกเลิก</button>
+            <button>บันทึก</button>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <button class="tab active" onclick="changeTab('upcoming', event)">Upcoming Trips</button>
+        <button class="tab" onclick="changeTab('completed', event)">Completed Trips</button>
+        <button class="tab" onclick="changeTab('hosted', event)">Hosted Trips</button>
+    </div>
+
+    <div class="trip-container" id="tripContainer">
+        
+    </div>
+
+
+    <div class="footer">
+        <div class="outer">
+
+            <div class="wrapper">
+                <div class="box">
+                    <img src="../image/icon/facebook.png" alt="">
+                    <p>ติดต่อเราทาง<br>
+                        เฟซบุ๊ค : <br>
+                        JoinNGo fanpage</p>
+                </div>
+                <div class="box">
+                    <img src="../image/icon/instagram.png" alt="">
+                    <p>ติดต่อเราทาง<br>
+                        อินสตาแกรม : <br>
+                        JoinNGo_official</p>
+                </div>
+                <div class="box">
+                    <img src="../image/icon/line.png" alt="">
+                    <p>ติดต่อเราทาง<br>
+                        แชทไลน์ : <br>
+                        @JoinNGo</p>
+                </div>
+                <div class="box">
+                    <img src="../image/icon/communication.png" alt="">
+                    <p>ติดต่อเราทางเมล : <br> 
+                        JoinNGo <br>
+                        @gmail.co.th</p>
+                </div>
+                <div class="box">
+                    <img src="../image/icon/mobile.png" alt="">
+                    <p>โทรติดต่อสอบถาม<br>
+                        ที่เบอร์ : <br>
+                        02 777 8988</p>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="box-1">
+                    <h3>เกี่ยวกับเรา</h3>
+                    <p class="para">       คือพื้นที่สำหรับคนรักการเดินทางที่ให้คุณสามารถ<br>
+                         <span>“สร้างทริปของตัวเอง”</span> หรือ <span>“เข้าร่วมทริปกับเพื่อน”</span><br>
+                          ได้ง่ายๆคุณสามารถจัดการรายละเอียดแชร์แผนและ<br>
+                        ชวนเพื่อนมาร่วมทริปได้ในไม่กี่คลิก!</p>
+                </div>
+                <div class="box-2">
+                    <h3>ติดต่อเรา</h3>
+                    <p><span>โทร</span>: 02 777 8988</p>
+                    <p><span>Line ID</span>: @JoinNGo </p>
+                    <p><span>Email</span>: JoinNGo@gmail.co.th </p>
+                    <p><span>Facebook</span>:  JoinNGo fanpage </p>
+                    <p><span>Instagram</span>:  JoinNGo_official </p>
+                </div>
+                <div class="box-3">
+                    <h3>เรื่องราวของเรา</h3>
+                    <p><span>Home</span></p>
+                    <p><span>Create and join</span></p>
+                    <p><span>Trips</span></p>
+                    <p><span>Contact</span></p>
+                </div>
+            </div>
+
+            <div class="copy">
+                <p>Copyright 2099 @ JoinNGo</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
