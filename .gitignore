@@ -1,0 +1,40 @@
+# ✅ Node modules
+node_modules/
+
+# ✅ Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ✅ dotenv files
+.env
+.env.*.local
+
+# ✅ Build output
+dist/
+build/
+.next/
+out/
+
+# ✅ OS files
+.DS_Store
+Thumbs.db
+
+# ✅ IDE/editor folders
+.vscode/
+.idea/
+*.swp
+
+# ✅ Dependency lock files (ใช้เฉพาะอันเดียว)
+# ถ้าใช้ npm ให้ ignore yarn.lock
+yarn.lock
+
+# ✅ Coverage (เช่นจาก Jest)
+coverage/
+
+# ✅ Temporary files
+tmp/
+temp/
+
+# ✅ Optional: remove package-lock.json ถ้าไม่ใช้ lock file
+# package-lock.json
